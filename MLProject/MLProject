@@ -1,0 +1,5 @@
+name: diamond price project
+
+entry_points:
+  main:
+    command: "python modelling.py"
