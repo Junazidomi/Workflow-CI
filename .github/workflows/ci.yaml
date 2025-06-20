@@ -61,7 +61,7 @@ jobs:
             DOCKER_BUILDKIT=1 docker build -t diamond_price_model MLProject
           elif [ -f Dockerfile ]; then
             echo "Dockerfile found in root"
-            DOCKER_BUILDKIT=1 docker build -t diamond_price_model -f Dockerfile .
+            DOCKER_BUILDKIT=1 docker build -t diamond_price_model -f DockerFile .
           else
             echo "Dockerfile not found!"
             exit 1
